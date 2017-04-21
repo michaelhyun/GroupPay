@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GroupPay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="GroupPay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,16 +22,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GROUPPAY!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpU-yD-oYx">
-                                <rect key="frame" x="139" y="316" width="96" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="riT-iu-sE1">
+                                <rect key="frame" x="139" y="295" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Ena-v2-Owb"/>
+                                    <constraint firstAttribute="height" constant="30" id="yUs-1l-xRb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RhX-S0-bWW">
+                                <rect key="frame" x="139" y="333" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HnU-h8-veN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPi-bS-Jj6">
+                                <rect key="frame" x="164" y="399" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Z7O-0P-tPN"/>
+                                    <constraint firstAttribute="width" constant="46" id="nUJ-R5-65K"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Cb-Ze-VTf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GroupPay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-zZ-8i4">
+                                <rect key="frame" x="75" y="129" width="224" height="109"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="riT-iu-sE1" firstAttribute="leading" secondItem="RhX-S0-bWW" secondAttribute="leading" id="0WW-b8-ENV"/>
+                            <constraint firstItem="RhX-S0-bWW" firstAttribute="centerX" secondItem="iPi-bS-Jj6" secondAttribute="centerX" id="46Y-Uy-hj6"/>
+                            <constraint firstItem="3Dw-zZ-8i4" firstAttribute="centerX" secondItem="riT-iu-sE1" secondAttribute="centerX" id="A88-xA-gBR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iPi-bS-Jj6" secondAttribute="bottom" constant="238" id="dOQ-iU-OmB"/>
+                            <constraint firstItem="iPi-bS-Jj6" firstAttribute="top" secondItem="RhX-S0-bWW" secondAttribute="bottom" constant="36" id="gm4-bw-U5M"/>
+                            <constraint firstItem="3Dw-zZ-8i4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="jot-Mf-3FM"/>
+                            <constraint firstItem="3Dw-zZ-8i4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mrt-Cj-wQ7"/>
+                            <constraint firstItem="riT-iu-sE1" firstAttribute="trailing" secondItem="RhX-S0-bWW" secondAttribute="trailing" id="mwj-vM-2jw"/>
+                            <constraint firstItem="3Dw-zZ-8i4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="109" id="rTI-fq-XSG"/>
+                            <constraint firstItem="riT-iu-sE1" firstAttribute="top" secondItem="3Dw-zZ-8i4" secondAttribute="bottom" constant="57" id="wyj-6s-rxT"/>
+                            <constraint firstItem="RhX-S0-bWW" firstAttribute="top" secondItem="riT-iu-sE1" secondAttribute="bottom" constant="8" symbolic="YES" id="xGz-lh-ZMf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="_password" destination="RhX-S0-bWW" id="itK-0W-Igi"/>
+                        <outlet property="_username" destination="riT-iu-sE1" id="Ruz-re-hIR"/>
+                        <outlet property="loginButton" destination="iPi-bS-Jj6" id="n5A-yt-WLI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
