@@ -24,20 +24,20 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "homeSegue"{
-            if let nvc = segue.destination as? UINavigationController{
-                if let homeVC = nvc.visibleViewController as? HomeViewController{
-                    homeVC.username = _username.text
-                    homeVC.password = _password.text
-                }
-                
-            }
-        }
-        if segue.identifier == "SignUpSegue"{
-            if let signupvc = segue.destination as? SignUpViewController {
-                
-            }
-        }
+//        if segue.identifier == "homeSegue"{
+//            if let nvc = segue.destination as? UINavigationController{
+//                if let homeVC = nvc.visibleViewController as? HomeViewController{
+//                    homeVC.username = _username.text
+//                    homeVC.password = _password.text
+//                }
+//                
+//            }
+//        }
+//        if segue.identifier == "SignUpSegue"{
+//            if let signupvc = segue.destination as? SignUpViewController {
+//                
+//            }
+//        }
     }
 }
 

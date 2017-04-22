@@ -34,18 +34,20 @@ class SignUpViewController: UIViewController {
         let userName = _username.text!
         let userFirst = _firstname.text!
         let userLast = _lastname.text!
-        
-        if ((userEmail.isEmpty)||(userPass.isEmpty)||(userName.isEmpty)||(userLast.isEmpty)||(userFirst.isEmpty)||(userPassConfirm.isEmpty)){
-            //display error message
-            displayAlert(userMessage: "All fields are required")
-            return false;
-        }
-        if(userPassConfirm != userPass){
-            //display alert message
-            displayAlert(userMessage: "Passwords do not match")
-            return false
+        if(identifier == "CreateUserSegue"){
+            if ((userEmail.isEmpty)||(userPass.isEmpty)||(userName.isEmpty)||(userLast.isEmpty)||(userFirst.isEmpty)||(userPassConfirm.isEmpty)){
+                //display error message
+                displayAlert(userMessage: "All fields are required")
+                return false;
+            }
+            if(userPassConfirm != userPass){
+                //display alert message
+                displayAlert(userMessage: "Passwords do not match")
+                return false
+            }
         }
         return true
+
     }
     
     func displayAlert(userMessage: String){
@@ -61,11 +63,11 @@ class SignUpViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if let nvc = segue.destination as? UINavigationController{
-            if let homeVC = nvc.visibleViewController as? HomeViewController{
-                //send data
-            }
-        }
+//        if let nvc = segue.destination as? UINavigationController{
+//            if let homeVC = nvc.visibleViewController as? HomeViewController{
+//                //send data
+//            }
+//        }
     }
     
     
