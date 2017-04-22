@@ -31,7 +31,6 @@ class HomeViewController: UIViewController {
                 if let accountVC = segue.destination as? AccountViewController{
                     //data send
                 }
-            
             case "Group":
                 if let groupVC = segue.destination as? GroupsViewController{
                     //data send
