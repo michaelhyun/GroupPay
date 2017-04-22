@@ -10,10 +10,6 @@ import UIKit
 
 class AccountViewController: UIViewController {
 
-    @IBOutlet weak var _name: UILabel!
-    @IBOutlet weak var _username: UILabel!
-    @IBOutlet weak var _email: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
