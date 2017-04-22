@@ -12,6 +12,13 @@
 		C30A71871EA69D45005933B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30A71851EA69D45005933B0 /* Main.storyboard */; };
 		C30A71891EA69D45005933B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30A71881EA69D45005933B0 /* Assets.xcassets */; };
 		C30A718C1EA69D45005933B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30A718A1EA69D45005933B0 /* LaunchScreen.storyboard */; };
+		C36DC71E1EAACAC000A5311C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DC71D1EAACAC000A5311C /* AccountViewController.swift */; };
+		C36DC7201EAADF4F00A5311C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DC71F1EAADF4F00A5311C /* SettingsViewController.swift */; };
+		C36DC7221EAADF6D00A5311C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DC7211EAADF6D00A5311C /* HistoryViewController.swift */; };
+		C36DC7241EAADF9000A5311C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DC7231EAADF9000A5311C /* HomeViewController.swift */; };
+		C36DC7261EAAE14E00A5311C /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DC7251EAAE14E00A5311C /* RemindersViewController.swift */; };
+		C36DC7281EAAE16800A5311C /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DC7271EAAE16800A5311C /* GroupsViewController.swift */; };
+		C36DC72E1EAAEB8400A5311C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36DC72D1EAAEB8400A5311C /* EventsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		C30A71881EA69D45005933B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30A718B1EA69D45005933B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C30A718D1EA69D45005933B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36DC71D1EAACAC000A5311C /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		C36DC71F1EAADF4F00A5311C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C36DC7211EAADF6D00A5311C /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		C36DC7231EAADF9000A5311C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C36DC7251EAAE14E00A5311C /* RemindersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
+		C36DC7271EAAE16800A5311C /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		C36DC72D1EAAEB8400A5311C /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsViewController.swift; path = GroupPay/EventsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +52,7 @@
 		C30A71751EA69D45005933B0 = {
 			isa = PBXGroup;
 			children = (
+				C36DC72D1EAAEB8400A5311C /* EventsViewController.swift */,
 				C30A71801EA69D45005933B0 /* GroupPay */,
 				C30A717F1EA69D45005933B0 /* Products */,
 			);
@@ -57,6 +72,12 @@
 				C30A71811EA69D45005933B0 /* AppDelegate.swift */,
 				C30A71831EA69D45005933B0 /* LoginViewController.swift */,
 				C30A71851EA69D45005933B0 /* Main.storyboard */,
+				C36DC7271EAAE16800A5311C /* GroupsViewController.swift */,
+				C36DC7231EAADF9000A5311C /* HomeViewController.swift */,
+				C36DC7251EAAE14E00A5311C /* RemindersViewController.swift */,
+				C36DC71D1EAACAC000A5311C /* AccountViewController.swift */,
+				C36DC7211EAADF6D00A5311C /* HistoryViewController.swift */,
+				C36DC71F1EAADF4F00A5311C /* SettingsViewController.swift */,
 				C30A71881EA69D45005933B0 /* Assets.xcassets */,
 				C30A718A1EA69D45005933B0 /* LaunchScreen.storyboard */,
 				C30A718D1EA69D45005933B0 /* Info.plist */,
@@ -137,7 +158,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30A71841EA69D45005933B0 /* LoginViewController.swift in Sources */,
+				C36DC7261EAAE14E00A5311C /* RemindersViewController.swift in Sources */,
 				C30A71821EA69D45005933B0 /* AppDelegate.swift in Sources */,
+				C36DC71E1EAACAC000A5311C /* AccountViewController.swift in Sources */,
+				C36DC7281EAAE16800A5311C /* GroupsViewController.swift in Sources */,
+				C36DC7221EAADF6D00A5311C /* HistoryViewController.swift in Sources */,
+				C36DC7201EAADF4F00A5311C /* SettingsViewController.swift in Sources */,
+				C36DC7241EAADF9000A5311C /* HomeViewController.swift in Sources */,
+				C36DC72E1EAAEB8400A5311C /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

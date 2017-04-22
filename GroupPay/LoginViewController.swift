@@ -22,6 +22,14 @@ class LoginViewController: UIViewController {
 
     @IBAction func LoginButton(_ sender: Any) {
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "homeSegue"{
+            if let nvc = segue.destination as? UINavigationController{
+                
+            }
+        }
+    }
 }
 
 
