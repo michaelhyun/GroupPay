@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,7 +41,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Cb-Ze-VTf"/>
-                                    <segue destination="nnM-Rj-JiR" kind="showDetail" identifier="homeSegue" id="DiP-eK-eXX"/>
+                                    <segue destination="nnM-Rj-JiR" kind="show" identifier="homeSegue" action="showDetailViewController:sender:" id="DiP-eK-eXX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GroupPay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-zZ-8i4">
@@ -97,7 +97,7 @@
         <scene sceneID="sDM-LN-9jL">
             <objects>
                 <navigationController id="nnM-Rj-JiR" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZJM-H9-p8h">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ZJM-H9-p8h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -269,7 +269,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="EVENTS"/>
                                 <connections>
-                                    <segue destination="KG4-EP-6RA" kind="showDetail" id="wvH-jR-Mi0"/>
+                                    <segue destination="KG4-EP-6RA" kind="show" identifier="Events" action="showDetailViewController:sender:" id="wvH-jR-Mi0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3V-BW-QW3">
@@ -277,7 +277,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="REMINDERS"/>
                                 <connections>
-                                    <segue destination="tXB-DC-3uL" kind="showDetail" id="7h2-oe-HsR"/>
+                                    <segue destination="tXB-DC-3uL" kind="show" identifier="Reminders" id="7h2-oe-HsR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEf-R9-jkb">
@@ -285,7 +285,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="HISTORY"/>
                                 <connections>
-                                    <segue destination="5Ol-34-ec8" kind="showDetail" identifier="History" id="2d6-Ja-gEA"/>
+                                    <segue destination="5Ol-34-ec8" kind="show" identifier="History" action="showDetailViewController:sender:" id="2d6-Ja-gEA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxL-VJ-uq2">
@@ -293,7 +293,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SETTINGS"/>
                                 <connections>
-                                    <segue destination="jzY-f7-zwt" kind="showDetail" id="UCJ-Ty-Kee"/>
+                                    <segue destination="jzY-f7-zwt" kind="show" identifier="Settings" action="showDetailViewController:sender:" id="UCJ-Ty-Kee"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5r-DN-J9j">
@@ -301,7 +301,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="GROUP"/>
                                 <connections>
-                                    <segue destination="bab-XW-ojk" kind="showDetail" identifier="Group" id="MBl-Qy-2fv"/>
+                                    <segue destination="bab-XW-ojk" kind="show" identifier="Group" id="MBl-Qy-2fv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Py-V1-0rR">
@@ -319,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HaO-Fe-55n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1253.5999999999999" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1095" y="139"/>
         </scene>
         <!--Account View Controller-->
         <scene sceneID="JiW-0Z-dQa">
@@ -540,6 +540,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ymy-2y-p9f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWC-Xs-a45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -567,6 +568,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9ih-a8-d5E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agA-6M-dxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

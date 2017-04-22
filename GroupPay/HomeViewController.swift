@@ -10,6 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    var password : String?
+    var username : String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
