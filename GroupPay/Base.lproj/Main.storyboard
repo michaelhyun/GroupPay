@@ -255,6 +255,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cU8-Lo-aGs"/>
                     <connections>
+                        <outlet property="_confirmpassword" destination="irQ-7Y-Suu" id="6dG-Em-TEr"/>
                         <outlet property="_email" destination="Tmj-3k-dqp" id="TnJ-ti-uPh"/>
                         <outlet property="_firstname" destination="KLN-LF-IyV" id="89x-Av-k80"/>
                         <outlet property="_lastname" destination="JG6-5b-1vy" id="4Ig-DB-VqD"/>
@@ -716,7 +717,7 @@
         <image name="LaunchImage" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DiP-eK-eXX"/>
+        <segue reference="or6-pX-j1E"/>
         <segue reference="HLu-Az-faV"/>
     </inferredMetricsTieBreakers>
 </document>

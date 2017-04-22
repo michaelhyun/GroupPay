@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        let identifier = segue.identifier
+//        let identifier = segue.identifier
 //        switch identifier! {
 //            case "Account":
 //                if let accountVC = segue.destination as? AccountViewController{
