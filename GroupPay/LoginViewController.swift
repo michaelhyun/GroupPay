@@ -33,6 +33,11 @@ class LoginViewController: UIViewController {
                 
             }
         }
+        if segue.identifier == "SignUpSegue"{
+            if let signupvc = segue.destination as? SignUpViewController {
+                
+            }
+        }
     }
 }
 
